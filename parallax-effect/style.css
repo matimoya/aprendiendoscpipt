@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FFECE7;
+    min-width: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #20758C;
+    pointer-events: none;
+    margin-right: 1000px;
+
+}
+
+#deer {
+    height: 100px;
+    width: auto;
+}
+
+.navigation a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #334A52;
+    padding: 3px 5px;
+    border-radius: 20px;
+    margin: 0 20px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.navigation a:hover, .navigation a.active {
+    background-color: #334A52;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+text {
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    margin: 0rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    z-index: 3;
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    background: #021713;
+    padding: 100px;
+}
+
+.sec h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+}
+
+/* -- Carta de presentacion --*/
+
+.personal-introduction {
+    background-color: #ffffff; /* Assuming a white background */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px; /* Adjust as needed */
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    font-family: 'Arial', sans-serif; /* Placeholder font */
+  }
+  
+  .personal-introduction .image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    margin-bottom: 20px; /* Space between image and heading */
+  }
+  
+  .personal-introduction .image-container img {
+    border-radius: 0%; /* Makes the image round */
+    width: 150px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  .personal-introduction h2 {
+    color: #333; /* Dark grey color for text */
+    text-align: center;
+  }
+  
+  .personal-introduction p {
+    color: #666; /* Lighter grey for paragraph text */
+    font-size: 0.9em; /* Smaller text for paragraphs */
+    line-height: 1.6; /* Spacing for readability */
+    margin-bottom: 15px;
+  }
+  
+  .social-media-links {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .social-media-links a {
+    color: #1a8cff; /* Blue color for links */
+    margin: 0 10px;
+    font-size: 24px; /* Icon size */
+  }
+  
+  .social-media-links a:hover {
+    color: #0d6efd; /* Darker blue on hover */
+  }
+  
+  
+  /* Responsive design adjustments */
+  @media (max-width: 600px) {
+    .personal-introduction {
+      padding: 15px;
+      max-width: 100%;
+    }
+  }
+  
